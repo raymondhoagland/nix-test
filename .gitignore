@@ -1,0 +1,4 @@
+defunct
+.vscode
+venv
+fastlane/report.xml

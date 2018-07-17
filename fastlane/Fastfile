@@ -1,0 +1,12 @@
+lane :before_all do
+    ci_setup
+end
+
+lane :test do
+    UI.important "Hello, this is a basic test of Fastlane from nix."
+    UI.message "Ok bye now - #{ENV['REF']}."
+end
+
+def ci_setup
+    return unless Helper.is_ci?
+end

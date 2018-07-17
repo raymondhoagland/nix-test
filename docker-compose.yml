@@ -1,0 +1,11 @@
+---
+version: '3.6'
+services:
+  nix:
+    image: nix_test:latest
+    labels:
+      - "maintainer=raymondhoagland"
+    container_name: nix_test
+    tty: yes
+    volumes:
+      - .:/home/nix_user/app

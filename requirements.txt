@@ -1,0 +1,4 @@
+-i https://pypi.org/simple
+requests[security]
+boto3
+flask
